@@ -37,6 +37,9 @@ define([
             400 = launch already initialized
             404 = launch removed
             */
+            console.log(err);
+            console.log(launchdata);
+
             if (!err) {
                 this._xAPIWrapper = wrapper;
 

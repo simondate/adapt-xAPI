@@ -121,7 +121,8 @@ function xAPILaunch(cb, terminate_on_unload, strict_callbacks)
             xhr2.send(JSON.stringify({"code":0,"description": message ||"User closed content"}));
 
         }
-
+        console.log(launchToken);
+        console.log(launchEndpoint)
         if (!launchToken || !launchEndpoint)
             return cb("invalid launch parameters");
         var launch = new URL(launchEndpoint);

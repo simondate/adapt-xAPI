@@ -66,7 +66,7 @@ define([
 
         onDataReady: function() {
             this._config = Adapt.config.get('_xapi');
-
+            console.log('hi');
             if (this._config && this._config._isEnabled) {
                 Adapt.trigger('plugin:beginWait');
 
