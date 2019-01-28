@@ -106,7 +106,7 @@ function isDate(date) {
     var Config = function()
     {
         var conf = {};
-        conf['endpoint'] = "http://localhost:8000/xapi/";
+        conf['endpoint'] = "http://54.183.88.223/data/xAPI";
         try
         {
             conf['auth'] = "Basic " + toBase64('tom:1234');
